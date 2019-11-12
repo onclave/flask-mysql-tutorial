@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Flask Routine</title>
+    </head>
+
+    <body>
+        <h1>Routine</h1>
+        <div>
+            {% for key, value in routine.items() %}
+            <div>
+                <span>Subject:&nbsp;</span>
+                <span>{{ key }}</span>
+                <span> --> </span>
+                <span>Time:&nbsp;</span>
+                <span>{{ value }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>DB SELECT</title>
+	</head>
+
+	<body>
+		<h2>EX1 COLUMN</h2>
+		<table>
+			<thead>
+				<tr>
+					<td>id</td>
+					<td>col1</td>
+					<td>col2</td>
+				</tr>
+			</thead>
+			{% for tuple in data %}
+			<tr>
+				{% for value in tuple %}
+				<td>{{ value }}</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+
+	<style>
+		table {
+			border: 2px solid black;
+		}
+
+		tr {
+			border: 1px solid black;
+		}
+
+		td {
+			border: 1px solid black;
+			width: 50px;
+			height: 25px;
+			text-align: center;
+		}
+	</style>
+
+</html>
